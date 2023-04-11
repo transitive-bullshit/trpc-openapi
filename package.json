@@ -1,5 +1,5 @@
 {
-  "name": "trpc-openapi",
+  "name": "@fisch0920/trpc-openapi",
   "version": "1.1.2",
   "description": "tRPC OpenAPI",
   "author": "James Berry <jb@jamesbe.com>",
@@ -31,6 +31,7 @@
     "zod": "^3.14.4"
   },
   "dependencies": {
+    "camelcase": "^7.0.1",
     "co-body": "^6.1.0",
     "lodash.clonedeep": "^4.5.0",
     "node-mocks-http": "^1.12.1",

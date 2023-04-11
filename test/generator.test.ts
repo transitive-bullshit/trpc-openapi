@@ -557,7 +557,7 @@ describe('generator', () => {
           "/users": Object {
             "get": Object {
               "description": undefined,
-              "operationId": "query.readUsers",
+              "operationId": "queryReadUsers",
               "parameters": Array [],
               "requestBody": undefined,
               "responses": Object {
@@ -597,7 +597,7 @@ describe('generator', () => {
             },
             "post": Object {
               "description": undefined,
-              "operationId": "mutation.createUser",
+              "operationId": "mutationCreateUser",
               "parameters": Array [],
               "requestBody": Object {
                 "content": Object {
@@ -654,7 +654,7 @@ describe('generator', () => {
           "/users/{id}": Object {
             "delete": Object {
               "description": undefined,
-              "operationId": "mutation.deleteUser",
+              "operationId": "mutationDeleteUser",
               "parameters": Array [
                 Object {
                   "description": undefined,
@@ -686,7 +686,7 @@ describe('generator', () => {
             },
             "get": Object {
               "description": undefined,
-              "operationId": "query.readUser",
+              "operationId": "queryReadUser",
               "parameters": Array [
                 Object {
                   "description": undefined,
@@ -733,7 +733,7 @@ describe('generator', () => {
             },
             "patch": Object {
               "description": undefined,
-              "operationId": "mutation.updateUser",
+              "operationId": "mutationUpdateUser",
               "parameters": Array [
                 Object {
                   "description": undefined,
@@ -905,7 +905,7 @@ describe('generator', () => {
     expect(openApiDocument.paths['/user']!.post!).toMatchInlineSnapshot(`
       Object {
         "description": undefined,
-        "operationId": "mutation.createUser",
+        "operationId": "mutationCreateUser",
         "parameters": Array [],
         "requestBody": Object {
           "content": Object {
@@ -974,7 +974,7 @@ describe('generator', () => {
     expect(openApiDocument.paths['/user']!.get!).toMatchInlineSnapshot(`
       Object {
         "description": undefined,
-        "operationId": "query.getUser",
+        "operationId": "queryGetUser",
         "parameters": Array [
           Object {
             "description": "User ID",
@@ -2296,7 +2296,7 @@ describe('generator', () => {
         "/procedure": Object {
           "get": Object {
             "description": undefined,
-            "operationId": "query.procedure",
+            "operationId": "queryProcedure",
             "parameters": Array [
               Object {
                 "description": undefined,
@@ -2341,7 +2341,7 @@ describe('generator', () => {
         "/router/procedure": Object {
           "get": Object {
             "description": undefined,
-            "operationId": "query.router.procedure",
+            "operationId": "queryRouterProcedure",
             "parameters": Array [
               Object {
                 "description": undefined,
@@ -2386,7 +2386,7 @@ describe('generator', () => {
         "/router/router/procedure": Object {
           "get": Object {
             "description": undefined,
-            "operationId": "query.router.router.procedure",
+            "operationId": "queryRouterRouterProcedure",
             "parameters": Array [
               Object {
                 "description": undefined,

@@ -1,4 +1,5 @@
 import { TRPCError } from '@trpc/server';
+import camelcase from 'camelcase';
 import { OpenAPIV3 } from 'openapi-types';
 
 import { OpenApiProcedureRecord, OpenApiRouter } from '../types';
@@ -14,7 +15,7 @@ export const getOpenApiPathsObject = (
   const procedures = appRouter._def.procedures as OpenApiProcedureRecord;
 
   forEachOpenApiProcedure(procedures, ({ path: procedurePath, type, procedure, openapi }) => {
-    const operationId = `${type}.${procedurePath}`;
+    const operationId = camelcase(`${type}.${procedurePath}`);
 
     try {
       if (type === 'subscription') {
